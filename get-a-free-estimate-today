@@ -4,122 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get a Free Estimate | Five Stars Office Cleaning Service LLC</title>
-<meta name="description" content="Request a free office cleaning estimate from Five Stars Office Cleaning Service LLC, serving Islip, Smithtown, Huntington, Babylon and adjacent Long Island communities.">
-<link rel="icon" href="https://fivestarsocs.weebly.com/uploads/1/3/1/6/131625299/published/picturelogo.png?1593550711">
+<meta name="description" content="Request a free office cleaning estimate from Five Stars Office Cleaning Service LLC, serving the towns of Islip, Smithtown, Huntington, Babylon and adjacent Long Island communities.">
+<link rel="icon" href="images/logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --pine:#1C2B3A;
-    --pine-deep:#121D28;
-    --ivory:#FFFFFF;
-    --slate:#5E6B78;
-    --gold:#6FB8E8;
-    --line:#E4EBF0;
-    --max:1120px;
+    --forest:#1F4B3F;
+    --forest-deep:#163A31;
+    --orange:#E8703A;
+    --cream:#FBFAF7;
+    --mint:#E4F0EA;
+    --sand:#F3F1EA;
+    --muted:#7C8F87;
+    --line:#E3E1D8;
+    --max:1180px;
   }
 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--ivory);
-    color:var(--pine-deep);
-    font-family:'Inter',sans-serif;
-    line-height:1.6;
+    background:var(--cream);
+    color:var(--forest-deep);
+    font-family:'Nunito Sans',sans-serif;
+    line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3{
-    font-family:'Sora',sans-serif;
+    font-family:'Quicksand',sans-serif;
     margin:0;
-    color:var(--pine-deep);
-    font-weight:600;
-    letter-spacing:-0.01em;
+    color:var(--forest);
+    font-weight:700;
   }
   a{color:inherit;}
   img{max-width:100%;display:block;}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
 
-  /* Header */
   header{
-    position:sticky;top:0;z-index:20;
-    background:rgba(247,245,239,0.92);
+    position:sticky;top:0;z-index:30;
+    background:rgba(251,250,247,0.94);
     backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
   }
   .nav{
     display:flex;align-items:center;justify-content:space-between;
-    padding:14px 24px;max-width:var(--max);margin:0 auto;
+    padding:20px 32px;max-width:var(--max);margin:0 auto;
   }
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .brand img{height:48px;width:auto;}
-  .brand span{font-family:'Sora',sans-serif;font-size:1.05rem;color:var(--pine-deep);line-height:1.2;}
-  .nav-links{display:flex;align-items:center;gap:28px;font-size:0.95rem;}
-  .nav-links a{text-decoration:none;color:var(--pine-deep);}
-  .nav-links a:hover{color:var(--gold);}
-  .btn{
-    display:inline-block;
-    background:var(--pine);
-    color:#fff;
-    padding:12px 26px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:500;
-    font-size:0.95rem;
-    border:1px solid var(--pine);
-    transition:background .2s ease, color .2s ease;
-    cursor:pointer;
-  }
-  .btn:hover{background:var(--pine-deep);}
-  .btn-gold{background:var(--gold);border-color:var(--gold);color:var(--pine-deep);}
-  .btn-gold:hover{background:#b8913f;}
+  .brand{display:flex;align-items:center;text-decoration:none;}
+  .brand img{height:52px;width:auto;}
+  .nav-links{display:flex;align-items:center;gap:32px;font-size:1rem;font-weight:600;}
+  .nav-links a{text-decoration:none;color:var(--forest);}
+  .nav-links a:hover{color:var(--orange);}
+  .cta-link{color:var(--orange) !important;display:inline-flex;align-items:center;gap:6px;}
+  .cta-link::after{content:"→";transition:transform .2s ease;}
+  .cta-link:hover::after{transform:translateX(3px);}
 
   @media (max-width:860px){
-    .nav-links .nav-only{display:none;}
+    .nav-links .link-only{display:none;}
   }
 
-  /* Page intro */
+  /* Intro */
   .intro{
-    padding:72px 0 48px;
-    border-bottom:1px solid var(--line);
-    background:linear-gradient(180deg, #F3F9FE 0%, #FFFFFF 60%);
+    padding:72px 0 56px;
+    text-align:center;
+    background:var(--mint);
   }
-  .intro .wrap{max-width:720px;}
-  .eyebrow-plain{color:var(--slate);font-size:0.95rem;margin-bottom:18px;}
+  .intro .wrap{max-width:680px;}
   .intro h1{
-    font-size:clamp(2rem, 4vw, 2.8rem);
-    line-height:1.1;
+    font-size:clamp(2rem, 4vw, 2.6rem);
   }
-  .intro p.lede{
+  .intro p{
     margin-top:20px;
-    font-size:1.1rem;
-    color:var(--slate);
+    color:var(--forest-deep);
+    opacity:0.8;
+    font-size:1.08rem;
   }
   .intro .call-note{
-    margin-top:18px;
-    font-size:1rem;
-    color:var(--pine-deep);
+    margin-top:22px;
+    font-weight:700;
+    opacity:1;
   }
   .intro .call-note a{
-    color:var(--pine);
-    font-weight:600;
+    color:var(--orange);
     text-decoration:none;
   }
   .intro .call-note a:hover{text-decoration:underline;}
 
-  /* Form section */
-  .form-section{padding:56px 0 96px;}
-  .form-section .wrap{max-width:720px;}
+  /* Form */
+  .form-section{padding:72px 0 100px;}
+  .form-section .wrap{max-width:680px;}
 
   form{
     background:#fff;
     border:1px solid var(--line);
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 20px 48px rgba(28,43,58,0.06);
+    padding:44px;
+    border-radius:24px;
+    box-shadow:0 24px 56px rgba(31,75,63,0.08);
   }
   .form-row{
     display:grid;
@@ -130,24 +113,205 @@
   .field label{
     display:block;
     font-size:0.92rem;
-    color:var(--pine-deep);
+    color:var(--forest);
     margin-bottom:8px;
-    font-weight:500;
+    font-weight:700;
   }
-  .field label .req{color:var(--gold);}
+  .field label .req{color:var(--orange);}
   .field input,
   .field textarea{
     width:100%;
-    padding:12px 14px;
+    padding:13px 16px;
     border:1px solid var(--line);
-    background:var(--ivory);
-    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    font-family:'Nunito Sans',sans-serif;
     font-size:1rem;
-    color:var(--pine-deep);
-    border-radius:10px;
+    color:var(--forest-deep);
+    border-radius:12px;
   }
   .field input:focus,
   .field textarea:focus{
+    outline:2px solid var(--orange);
+    outline-offset:1px;
+    background:#fff;
+  }
+  .field textarea{resize:vertical;min-height:120px;}
+  .required-note{
+    font-size:0.88rem;
+    color:var(--muted);
+    margin-bottom:28px;
+  }
+  .required-note .req{color:var(--orange);}
+
+  .submit-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-top:8px;
+    flex-wrap:wrap;
+  }
+  button.submit-btn{
+    font-family:'Quicksand',sans-serif;
+    font-size:1.05rem;
+    font-weight:700;
+    padding:15px 38px;
+    border:none;
+    border-radius:100px;
+    background:var(--orange);
+    color:#fff;
+    cursor:pointer;
+    transition:transform .2s ease;
+  }
+  button.submit-btn:hover{transform:translateY(-2px);}
+  .form-status{
+    font-size:0.95rem;
+    color:var(--muted);
+    font-weight:600;
+  }
+  .form-status.success{color:var(--forest);}
+  .form-status.error{color:#B5482E;}
+
+  @media (max-width:600px){
+    .form-row{grid-template-columns:1fr;}
+    form{padding:28px 22px;border-radius:18px;}
+  }
+
+  footer{
+    background:var(--forest-deep);
+    color:#CFE0D6;
+    padding:40px 0 28px;
+    text-align:center;
+  }
+  footer p{color:#9FB5A8;font-size:0.9rem;margin:6px 0;}
+  footer a{color:#CFE0D6;text-decoration:none;font-weight:600;}
+  footer a:hover{color:var(--orange);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Five Stars Office Cleaning Service LLC logo">
+    </a>
+    <nav class="nav-links">
+      <a class="link-only" href="index.html#about">About</a>
+      <a class="link-only" href="index.html#services">Services</a>
+      <a class="link-only" href="index.html#contact">Contact</a>
+      <a class="cta-link" href="get-a-free-estimate-today.html">Free estimate</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="intro">
+    <div class="wrap">
+      <h1>Get a FREE <br/> No-obligation estimate</h1>
+      <p>We offer our services exclusively in the Western Suffolk industrial area in Long Island, NY. Including but not limited to the towns of Islip, Smithtown, Huntington, Babylon and adjacent communities. We will eventually expand to other areas of the Island as our business grows.</p>
+      <p>If would like to get a free estimate,we will be more than glad to help you. Simply fill out the form below and we'll get back to you as soon as possible.</p>
+
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="wrap">
+      <form id="estimate-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <input type="hidden" name="_subject" value="New Free Estimate Request — Five Stars Office Cleaning">
+
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+
+        <p class="required-note"><span class="req">*</span> Indicates required field</p>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="first-name">First name <span class="req">*</span></label>
+            <input type="text" id="first-name" name="First Name" required autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="last-name">Last name <span class="req">*</span></label>
+            <input type="text" id="last-name" name="Last Name" required autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="company">Company name <span class="req">*</span></label>
+          <input type="text" id="company" name="Company Name" required autocomplete="organization">
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="Email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">Phone number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="Phone Number" required autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="service">Please briefly describe what type of service you are requesting <span class="req">*</span></label>
+          <textarea id="service" name="Service Requested" required></textarea>
+        </div>
+
+        <div class="submit-row">
+          <button class="submit-btn" type="submit">Submit</button>
+          <span class="form-status" id="form-status"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Five Stars Office Cleaning Service LLC &copy; 2026</p>
+    <a href="index.html">Back to home</a>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('estimate-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const honeypot = form.querySelector('input[name="_gotcha"]');
+    if (honeypot && honeypot.value) {
+      return;
+    }
+
+    status.textContent = 'Sending...';
+    status.className = 'form-status';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.textContent = "Thanks! Your request has been sent. We'll get back to you shortly.";
+        status.className = 'form-status success';
+      } else {
+        status.textContent = "Something went wrong. Please call us at 631-334-4943 or try again.";
+        status.className = 'form-status error';
+      }
+    } catch (err) {
+      status.textContent = "Something went wrong. Please call us at 631-334-4943 or try again.";
+      status.className = 'form-status error';
+    }
+  });
+</script>
+
+</body>
+</html>  .field textarea:focus{
     outline:2px solid var(--pine);
     outline-offset:1px;
     background:#fff;
